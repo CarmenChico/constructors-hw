@@ -7,6 +7,8 @@ function Human (options) {
   // this.alertness = opts.alertness
   if (opts.alertness <0.1) {this.alertness = true}
   else {this.alertness = false};
+  this.hasCoffee = opts.hasCoffee || false;
+  this.needsCoffee= opts.needsCoffee || true;
 
 }
 Human.prototype.buy = function () {
