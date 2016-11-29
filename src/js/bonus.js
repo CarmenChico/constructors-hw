@@ -2,7 +2,26 @@ import {it, expect} from "./test_lib";
 
 // Constructors
 // Only add code to *THIS* section!
+function Human (options) {
+  let opts = options || {};
+  // this.alertness = opts.alertness
+  if (opts.alertness <0.1) {this.alertness = true}
+  else {this.alertness = false};
 
+}
+Human.prototype.buy = function () {
+
+}
+Human.prototype.drink = function () {
+
+}
+
+function Coffee() {
+  let options = options || {};
+
+}
+
+;
 ///
 ///
 ///

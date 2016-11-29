@@ -5,11 +5,12 @@ import { Person } from "./constructors/person";
 // Uncomment the line below for Hard Mode
 // Only do this *AFTER* the Normal Mode is finished!
 
-// import from "./bonus";
+import "./bonus";
 
 // Do not ADD or MODIFY code below this line :)
 // Write your code in the constructor files! (dog.js and person.js)
 // Dogs
+
 let sadie = new Dog({
   color: 'black',
   hungry: false
