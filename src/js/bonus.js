@@ -2,37 +2,38 @@ import {it, expect} from "./test_lib";
 
 // Constructors
 // Only add code to *THIS* section!
-// class Coffee {
-//
-// }
-//
-// class Human {
-// }
+
 
 function Human (options) {
   let opts = options || {};
-  // this.alertness = opts.alertness
-  if (opts.alertness < 0.1) {this.alertness = false}
-  // {opts.alertness = false};
-  else if (opts.alertness > 0.1) {this.alertness=true}
-  else {this.alertness = false};
   this.hasCoffee = false;
-  this.needsCoffee= opts.needsCoffee || true;
-
+  this.needsCoffee = true;
+  this.alertness = opts.alertness || false;
+  // if (opts.alertness > 0.2) {this.alertness = true}
+  // else {this.alertness = false};
 }
 
-function Coffee() {
-  let options = options || {};
-  this.full = options.full || true;
-};
-
-Human.prototype.buy = function (coffee) {
-  coffee.hasCoffee = "true";
-  coffee.needsCoffee= false;
+function Coffee(options) {
+  let opts = options || {};
+  this.full = true;
+  this.empty = false;
 }
-Human.prototype.drink = function (drank) {
 
-};
+Human.prototype.buy = function () {
+  this.hasCoffee = true;
+  this.needsCoffee = false;
+  this.empty = false
+  this.alertness = false;
+
+}
+Human.prototype.drink = function () {
+  this.alertness = true;
+  // this.empty = false;
+  this.full = false;
+  
+}
+
+
 // Human.prototype.drink = function (drank) {
 //   let drank = options ;
 //   if (drank.full = false) {drank.full = drank.full};
