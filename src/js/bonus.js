@@ -30,7 +30,6 @@ Human.prototype.drink = function () {
   this.alertness = true;
   // this.empty = false;
   this.full = false;
-  
 }
 
 

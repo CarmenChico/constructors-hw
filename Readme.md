@@ -10,4 +10,4 @@ Objectives
 
 We were asked to make all the tests pass by adding the Constructors missing  
 
-#### Click the link to my [live Project](https://tiy-maria-del-carmenchico-constructors-hw.surge.sh)
+#### Click [here to take a look at how the tests went via the console](https://tiy-maria-del-carmenchico-constructors-hw.surge.sh)
